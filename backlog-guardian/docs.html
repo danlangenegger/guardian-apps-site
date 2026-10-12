@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation - Backlog Guardian for Jira</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f8f9;
+      color: #172b4d;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    h1, h2, h3 {
+      color: #172b4d;
+    }
+
+    h2 {
+      margin-top: 36px;
+    }
+
+    h3 {
+      margin-top: 24px;
+    }
+
+    p, li {
+      line-height: 1.65;
+      color: #44546f;
+    }
+
+    code {
+      background: #f1f2f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    a {
+      color: #0c66e4;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #dfe1e6;
+      border-radius: 10px;
+      padding: 32px;
+    }
+
+    .note {
+      background: #e9f2ff;
+      border-left: 4px solid #0c66e4;
+      padding: 16px;
+      margin: 20px 0;
+    }
+
+    .footer-links {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #dfe1e6;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Backlog Guardian for Jira Documentation</h1>
+
+      <p><strong>Last updated:</strong> October 2026</p>
+
+      <p>
+        Backlog Guardian for Jira helps teams monitor backlog hygiene and identify
+        common quality issues before they affect planning and delivery.
+      </p>
+
+      <h2>1. Overview</h2>
+
+      <p>
+        Backlog Guardian scans Jira projects for common backlog hygiene issues and
+        summarizes the result in a Backlog Health Score from 0 to 100.
+      </p>
+
+      <p>The app currently checks for:</p>
+
+      <ul>
+        <li>Unassigned issues</li>
+        <li>Stale issues</li>
+        <li>Overdue issues</li>
+        <li>Missing estimates</li>
+        <li>Stale epics</li>
+      </ul>
+
+      <p>
+        Each check shows the number of affected issues and allows users to inspect
+        the underlying Jira work items.
+      </p>
+
+      <h2>2. Installation</h2>
+
+      <p>
+        Backlog Guardian is installed from the Atlassian Marketplace into a Jira Cloud site.
+      </p>
+
+      <p>To install the app:</p>
+
+      <ol>
+        <li>Open the Backlog Guardian Marketplace listing.</li>
+        <li>Select the option to install or start a trial.</li>
+        <li>Select the Jira Cloud site where the app should be installed.</li>
+        <li>Approve the requested Jira permissions.</li>
+        <li>Open Backlog Guardian from Jira after installation completes.</li>
+      </ol>
+
+      <div class="note">
+        Backlog Guardian is a Jira Cloud app built on Atlassian Forge.
+      </div>
+
+      <h2>3. Selecting a project</h2>
+
+      <p>
+        Use the project selector at the top of Backlog Guardian to choose the Jira
+        project you want to inspect.
+      </p>
+
+      <p>
+        The app only displays Jira projects that the current user is permitted to access.
+      </p>
+
+      <h2>4. Backlog Health Score</h2>
+
+      <p>
+        The Backlog Health Score provides a simple summary of backlog hygiene.
+        The score ranges from 0 to 100.
+      </p>
+
+      <p>
+        A higher score indicates fewer detected backlog hygiene problems.
+        The score breakdown shows which checks contribute penalties to the current score.
+      </p>
+
+      <p>The current scoring model considers:</p>
+
+      <ul>
+        <li>Overdue issues</li>
+        <li>Stale epics</li>
+        <li>Unassigned issues</li>
+        <li>Stale issues</li>
+        <li>Missing estimates</li>
+      </ul>
+
+      <h2>5. Backlog checks</h2>
+
+      <h3>Unassigned Issues</h3>
+
+      <p>
+        Detects open Jira issues that do not currently have an assignee.
+      </p>
+
+      <h3>Stale Issues</h3>
+
+      <p>
+        Detects open issues that have not been updated within the configured number
+        of days.
+      </p>
+
+      <h3>Overdue Issues</h3>
+
+      <p>
+        Detects open issues where the due date has already passed.
+      </p>
+
+      <h3>Missing Estimates</h3>
+
+      <p>
+        Detects open issues that do not contain the configured estimate information.
+      </p>
+
+      <p>Supported estimate methods include:</p>
+
+      <ul>
+        <li>Original Estimate</li>
+        <li>Story Points</li>
+        <li>Disabled</li>
+      </ul>
+
+      <h3>Stale Epics</h3>
+
+      <p>
+        Detects epics that have not been updated within the configured stale epic threshold.
+      </p>
+
+      <h2>6. Inspecting affected issues</h2>
+
+      <p>
+        Checks with affected issues include a <strong>View issues</strong> action.
+      </p>
+
+      <p>
+        Selecting this action opens a detail section showing the affected Jira issues,
+        including their issue key, summary and status.
+      </p>
+
+      <p>
+        Issue keys can be opened directly in Jira for further investigation and cleanup.
+      </p>
+
+      <h2>7. Project configuration</h2>
+
+      <p>
+        Backlog Guardian supports project-specific monitoring settings.
+      </p>
+
+      <p>Available settings include:</p>
+
+      <ul>
+        <li>Enable or disable automatic monitoring</li>
+        <li>Stale issue threshold in days</li>
+        <li>Stale epic threshold in days</li>
+        <li>Estimate method</li>
+      </ul>
+
+      <p>
+        Configuration changes require the appropriate Jira project administration permissions.
+      </p>
+
+      <h2>8. Manual scans</h2>
+
+      <p>
+        Use <strong>Run scan now</strong> to perform an immediate backlog health scan
+        for the selected project.
+      </p>
+
+      <p>
+        After the scan completes, the latest Backlog Health Score, check counts and
+        score breakdown are displayed.
+      </p>
+
+      <h2>9. Automatic daily monitoring</h2>
+
+      <p>
+        Projects with monitoring enabled are scanned automatically once per day.
+      </p>
+
+      <p>
+        The latest completed scan is stored and shown when users return to Backlog Guardian.
+      </p>
+
+      <h2>10. Permissions</h2>
+
+      <p>
+        Backlog Guardian uses Jira permissions to control access to project and issue data.
+      </p>
+
+      <p>
+        Interactive Jira access is performed according to the permissions available
+        to the current Jira user where applicable.
+      </p>
+
+      <p>
+        Project configuration changes are restricted to users with the required
+        project administration permissions.
+      </p>
+
+      <h2>11. Licensing</h2>
+
+      <p>
+        Backlog Guardian is distributed through the Atlassian Marketplace.
+      </p>
+
+      <p>
+        When the app does not have an active Marketplace license or trial,
+        Backlog Guardian operates in read-only mode.
+      </p>
+
+      <p>
+        Existing backlog health information can still be reviewed, but configuration
+        changes and manual scans require an active license or trial.
+      </p>
+
+      <h2>12. Data and hosting</h2>
+
+      <p>
+        Backlog Guardian is built on Atlassian Forge.
+      </p>
+
+      <p>
+        Application compute and persistent application storage are provided by
+        Atlassian infrastructure.
+      </p>
+
+      <p>
+        Backlog Guardian does not require an external application server or external
+        database for its core functionality.
+      </p>
+
+      <h2>13. Troubleshooting</h2>
+
+      <h3>No projects are visible</h3>
+
+      <p>
+        Confirm that the current Jira user has permission to browse the relevant project.
+      </p>
+
+      <h3>Settings cannot be changed</h3>
+
+      <p>
+        Confirm that the current user has the required Jira project administration
+        permissions and that the app has an active license or trial.
+      </p>
+
+      <h3>A check shows unexpected results</h3>
+
+      <p>
+        Review the configured stale thresholds and estimate method for the selected project.
+        You can also open the affected issues to verify the underlying Jira data.
+      </p>
+
+      <h3>Manual scan is unavailable</h3>
+
+      <p>
+        Manual scans require an active Marketplace license or trial.
+      </p>
+
+      <h2>14. Support</h2>
+
+      <p>
+        If you need help with installation, configuration, licensing or unexpected
+        scan results, visit the
+        <a href="./support.html">Backlog Guardian Support page</a>.
+      </p>
+
+      <div class="footer-links">
+        <p>
+          <a href="./privacy.html">Privacy Policy</a>
+          |
+          <a href="./security.html">Security Policy</a>
+          |
+          <a href="./terms.html">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
