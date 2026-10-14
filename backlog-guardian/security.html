@@ -3,151 +3,255 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Security Policy - Backlog Guardian for Jira</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f8f9;
-      color: #172b4d;
-    }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 24px;
-    }
+  <meta
+    name="description"
+    content="Security Policy for Backlog Guardian for Jira by Guardian Apps."
+  />
 
-    h1, h2 {
-      color: #172b4d;
-    }
+  <title>Security Policy | Backlog Guardian for Jira</title>
 
-    h2 {
-      margin-top: 32px;
-    }
-
-    p, li {
-      line-height: 1.65;
-      color: #44546f;
-    }
-
-    a {
-      color: #0c66e4;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #dfe1e6;
-      border-radius: 10px;
-      padding: 32px;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/styles.css" />
 </head>
+
 <body>
-  <main>
-    <div class="card">
-      <h1>Security Policy for Backlog Guardian for Jira</h1>
 
-      <p><strong>Last updated:</strong> October 2026</p>
+  <header class="site-header">
+    <div class="container nav">
 
-      <h2>1. Overview</h2>
+      <a class="brand" href="../index.html">
+        <img
+          class="brand-logo"
+          src="../assets/guardian-apps-logo.png"
+          alt="Guardian Apps logo"
+        />
+        <span>Guardian Apps</span>
+      </a>
 
-      <p>
-        Backlog Guardian for Jira is provided by Guardian Apps and is built on Atlassian Forge.
-        Security is considered throughout the design, development and operation of the App.
-      </p>
+      <nav class="site-nav">
+        <a href="../index.html#apps">Apps</a>
+        <a href="./docs.html">Documentation</a>
+        <a href="./support.html">Support</a>
+      </nav>
 
-      <h2>2. Hosting and infrastructure</h2>
-
-      <p>
-        Backlog Guardian uses Atlassian Forge for application compute and persistent storage.
-        The App does not require an external application server or external database for its core functionality.
-      </p>
-
-      <h2>3. Authentication and authorization</h2>
-
-      <p>
-        Backlog Guardian relies on Atlassian authentication and Jira permissions.
-        Users can only access Jira data that they are authorized to access through their Jira environment.
-      </p>
-
-      <p>
-        Configuration changes are restricted according to the permissions available to the current Jira user.
-      </p>
-
-      <h2>4. Secrets and credentials</h2>
-
-      <p>
-        Backlog Guardian does not require customers to provide Jira passwords,
-        Atlassian Personal Access Tokens or other shared authentication secrets.
-      </p>
-
-      <h2>5. Data handling</h2>
-
-      <p>
-        Backlog Guardian accesses Jira project and issue data only as required to provide its functionality.
-      </p>
-
-      <p>
-        Application configuration and scan results are stored using Atlassian Forge storage.
-        The App does not use external analytics services, advertising services or external databases
-        for its core functionality.
-      </p>
-
-      <h2>6. Security vulnerabilities</h2>
-
-      <p>
-        If you believe you have identified a security vulnerability in Backlog Guardian,
-        please report it privately and do not disclose the issue publicly before it has been investigated.
-      </p>
-
-      <p>
-        Security reports should include, where possible:
-      </p>
-
-      <ul>
-        <li>a description of the issue</li>
-        <li>steps to reproduce the issue</li>
-        <li>the potential impact</li>
-        <li>relevant screenshots or error messages</li>
-      </ul>
-
-      <p>
-        Do not include passwords, authentication tokens or unnecessary confidential customer data.
-      </p>
-
-      <h2>7. Security response</h2>
-
-      <p>
-        Guardian Apps will review reported security issues and prioritize remediation based on severity,
-        exploitability and customer impact.
-      </p>
-
-      <p>
-        Where appropriate, fixes will be deployed through the Atlassian Forge deployment process.
-      </p>
-
-      <h2>8. Dependency management</h2>
-
-      <p>
-        Backlog Guardian dependencies are periodically reviewed and updated.
-        Known dependency vulnerabilities are assessed and addressed according to their severity and relevance.
-      </p>
-
-      <h2>9. Changes to this policy</h2>
-
-      <p>
-        This Security Policy may be updated as the App evolves or security requirements change.
-        The current version will remain available at this URL.
-      </p>
-
-      <h2>10. Contact</h2>
-
-      <p>
-        Security issues can be reported using the security contact listed on the
-        Backlog Guardian Atlassian Marketplace listing.
-      </p>
     </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+
+        <img
+          class="page-hero-logo"
+          src="../assets/backlog-guardian-logo.png"
+          alt="Backlog Guardian for Jira logo"
+        />
+
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Backlog Guardian for Jira
+          </div>
+
+          <h1>Security Policy</h1>
+
+          <p>
+            Security practices, data handling and vulnerability reporting
+            for Backlog Guardian.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-layout">
+
+        <article class="content-card">
+
+          <p><strong>Last updated:</strong> October 2026</p>
+
+          <h2 id="overview">1. Overview</h2>
+
+          <p>
+            Backlog Guardian for Jira is provided by Guardian Apps and is built on Atlassian Forge.
+            Security is considered throughout the design, development and operation of the App.
+          </p>
+
+          <h2 id="hosting">2. Hosting and infrastructure</h2>
+
+          <p>
+            Backlog Guardian uses Atlassian Forge for application compute and persistent storage.
+            The App does not require an external application server or external database for its
+            core functionality.
+          </p>
+
+          <h2 id="authentication">3. Authentication and authorization</h2>
+
+          <p>
+            Backlog Guardian relies on Atlassian authentication and Jira permissions.
+            Users can only access Jira data that they are authorized to access through their
+            Jira environment.
+          </p>
+
+          <p>
+            Configuration changes are restricted according to the permissions available to the
+            current Jira user.
+          </p>
+
+          <h2 id="credentials">4. Secrets and credentials</h2>
+
+          <p>
+            Backlog Guardian does not require customers to provide Jira passwords,
+            Atlassian Personal Access Tokens or other shared authentication secrets.
+          </p>
+
+          <h2 id="data-handling">5. Data handling</h2>
+
+          <p>
+            Backlog Guardian accesses Jira project and issue data only as required to provide
+            its functionality.
+          </p>
+
+          <p>
+            Application configuration and scan results are stored using Atlassian Forge storage.
+            The App does not use external analytics services, advertising services or external
+            databases for its core functionality.
+          </p>
+
+          <h2 id="vulnerabilities">6. Security vulnerabilities</h2>
+
+          <p>
+            If you believe you have identified a security vulnerability in Backlog Guardian,
+            please report it privately and do not disclose the issue publicly before it has
+            been investigated.
+          </p>
+
+          <p>Security reports should include, where possible:</p>
+
+          <ul>
+            <li>a description of the issue</li>
+            <li>steps to reproduce the issue</li>
+            <li>the potential impact</li>
+            <li>relevant screenshots or error messages</li>
+          </ul>
+
+          <div class="note">
+            <p>
+              Do not include passwords, authentication tokens or unnecessary confidential
+              customer data in security reports.
+            </p>
+          </div>
+
+          <p>
+            Security issues can be reported privately at
+            <a href="mailto:security@guardianapps.ch">
+              security@guardianapps.ch
+            </a>.
+          </p>
+
+          <h2 id="response">7. Security response</h2>
+
+          <p>
+            Guardian Apps will review reported security issues and prioritize remediation based
+            on severity, exploitability and customer impact.
+          </p>
+
+          <p>
+            Where appropriate, fixes will be deployed through the Atlassian Forge deployment
+            process.
+          </p>
+
+          <h2 id="dependencies">8. Dependency management</h2>
+
+          <p>
+            Backlog Guardian dependencies are periodically reviewed and updated.
+            Known dependency vulnerabilities are assessed and addressed according to their
+            severity and relevance.
+          </p>
+
+          <h2 id="changes">9. Changes to this policy</h2>
+
+          <p>
+            This Security Policy may be updated as the App evolves or security requirements
+            change. The current version will remain available at this URL.
+          </p>
+
+          <h2 id="contact">10. Contact</h2>
+
+          <p>
+            Security issues can be reported directly to
+            <a href="mailto:security@guardianapps.ch">
+              security@guardianapps.ch
+            </a>.
+          </p>
+
+          <p>
+            For non-security questions, please use the
+            <a href="./support.html">Backlog Guardian Support page</a>.
+          </p>
+
+        </article>
+
+        <aside class="sidebar">
+          <p class="sidebar-title">Security Policy</p>
+
+          <div class="sidebar-links">
+            <a href="#overview">Overview</a>
+            <a href="#hosting">Hosting</a>
+            <a href="#authentication">Authentication</a>
+            <a href="#credentials">Secrets & credentials</a>
+            <a href="#data-handling">Data handling</a>
+            <a href="#vulnerabilities">Vulnerability reporting</a>
+            <a href="#response">Security response</a>
+            <a href="#dependencies">Dependencies</a>
+            <a href="#changes">Changes</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="contact-card">
+
+          <div>
+            <h2>Report a security issue</h2>
+
+            <p>
+              Please report potential vulnerabilities privately so we can
+              investigate them responsibly.
+            </p>
+          </div>
+
+          <a class="button" href="mailto:security@guardianapps.ch">
+            security@guardianapps.ch
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>© 2026 Guardian Apps</div>
+
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="./docs.html">Documentation</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

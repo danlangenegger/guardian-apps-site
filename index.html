@@ -3,80 +3,282 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guardian Apps</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f8f9;
-      color: #172b4d;
-    }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 64px 24px;
-    }
+  <meta
+    name="description"
+    content="Guardian Apps builds small, focused apps for Atlassian teams. Backlog Guardian for Jira helps teams monitor backlog hygiene with automated checks and a clear health score."
+  />
 
-    h1 {
-      margin-bottom: 12px;
-      font-size: 36px;
-    }
+  <title>Guardian Apps | Focused apps for Atlassian teams</title>
 
-    p {
-      line-height: 1.6;
-      color: #44546f;
-    }
-
-    .card {
-      margin-top: 32px;
-      padding: 24px;
-      background: white;
-      border: 1px solid #dfe1e6;
-      border-radius: 10px;
-    }
-
-    a {
-      color: #0c66e4;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      line-height: 1.8;
-    }
-  </style>
+  <link rel="stylesheet" href="./assets/styles.css" />
 </head>
+
 <body>
-  <main>
-    <h1>Guardian Apps</h1>
 
-    <p>
-      Small, focused apps for Atlassian teams.
-    </p>
+  <header class="site-header">
+    <div class="container nav">
 
-    <div class="card">
-      <h2>Backlog Guardian for Jira</h2>
+      <a class="brand" href="./index.html">
+        <img
+          class="brand-logo"
+          src="./assets/guardian-apps-logo.png"
+          alt="Guardian Apps logo"
+        />
+        <span>Guardian Apps</span>
+      </a>
 
-      <p>
-        Backlog Guardian helps Jira teams monitor backlog hygiene with automated checks and a simple health score.
-      </p>
+      <nav class="site-nav">
+        <a href="#apps">Apps</a>
+        <a href="./backlog-guardian/docs.html">Documentation</a>
+        <a href="./backlog-guardian/support.html">Support</a>
+      </nav>
 
-      <ul>
-        <li>
-          <a href="./backlog-guardian/privacy.html">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="./backlog-guardian/terms.html">Terms of Service</a>
-        </li>
-        <li>
-          <a href="./backlog-guardian/support.html">Support</a>
-        </li>
-      </ul>
     </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Built for Atlassian teams
+          </div>
+
+          <h1>
+            Small apps.<br />
+            Focused problems.<br />
+            Useful results.
+          </h1>
+
+          <p>
+            Guardian Apps builds focused tools for Atlassian teams that solve
+            specific workflow problems without unnecessary complexity.
+          </p>
+
+          <div class="hero-actions">
+
+            <a class="button button-primary" href="#apps">
+              Explore our apps
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="mailto:hello@guardianapps.ch"
+            >
+              Contact Guardian Apps
+            </a>
+
+          </div>
+        </div>
+
+        <div class="hero-card">
+
+          <img
+            src="./assets/backlog-guardian-banner.png"
+            alt="Backlog Guardian for Jira"
+          />
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <h2>Our apps</h2>
+
+          <p>
+            Each Guardian Apps product focuses on one clear problem and aims
+            to provide value with minimal setup and minimal process overhead.
+          </p>
+
+        </div>
+
+        <article class="product-card">
+
+          <div class="product-logo-wrap">
+
+            <img
+              class="product-logo"
+              src="./assets/backlog-guardian-logo.png"
+              alt="Backlog Guardian for Jira logo"
+            />
+
+          </div>
+
+          <div class="product-content">
+
+            <h3>Backlog Guardian for Jira</h3>
+
+            <div class="product-tagline">
+              Keep Jira backlogs healthy
+            </div>
+
+            <p class="product-description">
+              Backlog Guardian automatically identifies common backlog hygiene
+              issues and summarizes them in a simple Backlog Health Score.
+              Teams can quickly see where attention is needed and drill down
+              into the affected Jira issues.
+            </p>
+
+            <div class="feature-grid">
+
+              <div class="feature">
+                <strong>Automated checks</strong>
+                <span>
+                  Detect stale issues, unassigned work, overdue items,
+                  missing estimates and stale epics.
+                </span>
+              </div>
+
+              <div class="feature">
+                <strong>Backlog Health Score</strong>
+                <span>
+                  Understand overall backlog health with a clear score from
+                  0 to 100 and a transparent penalty breakdown.
+                </span>
+              </div>
+
+              <div class="feature">
+                <strong>Issue drill-down</strong>
+                <span>
+                  Review affected Jira issues and act directly on the
+                  underlying work.
+                </span>
+              </div>
+
+            </div>
+
+            <div class="product-links">
+
+              <a href="./backlog-guardian/docs.html">
+                Documentation →
+              </a>
+
+              <a href="./backlog-guardian/support.html">
+                Support →
+              </a>
+
+              <a href="./backlog-guardian/privacy.html">
+                Privacy →
+              </a>
+
+              <a href="./backlog-guardian/security.html">
+                Security →
+              </a>
+
+              <a href="./backlog-guardian/terms.html">
+                Terms →
+              </a>
+
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <h2>Built with a focused approach</h2>
+
+          <p>
+            Guardian Apps is designed around small products that solve clear
+            problems for Atlassian teams.
+          </p>
+
+        </div>
+
+        <div class="value-grid">
+
+          <div class="value-card">
+            <h3>Focused products</h3>
+
+            <p>
+              Each app targets a specific workflow problem instead of becoming
+              a large collection of unrelated features.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <h3>Minimal overhead</h3>
+
+            <p>
+              Products are designed to deliver useful results with little
+              configuration and without introducing unnecessary process.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <h3>Built on Atlassian Forge</h3>
+
+            <p>
+              Our current apps use Atlassian Forge and Atlassian-hosted
+              infrastructure wherever possible.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="contact-card">
+
+          <div>
+            <h2>Questions or feedback?</h2>
+
+            <p>
+              We welcome feedback from Atlassian teams, early users and
+              partners who encounter the problems our apps are designed
+              to solve.
+            </p>
+          </div>
+
+          <a
+            class="button"
+            href="mailto:hello@guardianapps.ch"
+          >
+            hello@guardianapps.ch
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div>
+        © 2026 Guardian Apps
+      </div>
+
+      <div class="footer-links">
+        <a href="./backlog-guardian/privacy.html">Privacy</a>
+        <a href="./backlog-guardian/security.html">Security</a>
+        <a href="./backlog-guardian/terms.html">Terms</a>
+        <a href="./backlog-guardian/support.html">Support</a>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
 </html>
