@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Security Policy for Blocker Radar for Jira by Guardian Apps."
+  />
+
+  <title>Security Policy | Blocker Radar for Jira</title>
+
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a class="brand" href="../index.html">
+        <img
+          class="brand-logo"
+          src="../assets/guardian-apps-logo.png"
+          alt="Guardian Apps logo"
+        />
+        <span>Guardian Apps</span>
+      </a>
+
+      <nav class="site-nav">
+        <a href="../index.html#apps">Apps</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./support.html">Support</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+
+        <img
+          class="page-hero-logo"
+          src="../assets/blocker-radar-logo.png"
+          alt="Blocker Radar for Jira logo"
+        />
+
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Blocker Radar for Jira
+          </div>
+
+          <h1>Security Policy</h1>
+
+          <p>
+            Security practices, data handling and vulnerability reporting
+            for Blocker Radar.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-layout">
+
+        <article class="content-card">
+
+          <p><strong>Last updated:</strong> October 2026</p>
+
+          <h2 id="overview">1. Overview</h2>
+
+          <p>
+            Blocker Radar for Jira is provided by Guardian Apps and is built on
+            Atlassian Forge. Security is considered throughout the design,
+            development and operation of the App.
+          </p>
+
+          <h2 id="hosting">2. Hosting and infrastructure</h2>
+
+          <p>
+            Blocker Radar runs on Atlassian Forge-hosted infrastructure.
+            The App does not require an external application server or external
+            database for its core functionality.
+          </p>
+
+          <p>
+            The current version has been verified as eligible for Atlassian's
+            Runs on Atlassian program.
+          </p>
+
+          <h2 id="authentication">3. Authentication and authorization</h2>
+
+          <p>
+            Blocker Radar relies on Atlassian authentication and Jira platform
+            permissions.
+          </p>
+
+          <p>
+            Access to the App requires access to the relevant Atlassian Jira Cloud
+            environment.
+          </p>
+
+          <h2 id="credentials">4. Secrets and credentials</h2>
+
+          <p>
+            Blocker Radar does not require customers to provide Jira passwords,
+            Atlassian API tokens, Personal Access Tokens or shared authentication
+            credentials.
+          </p>
+
+          <h2 id="data-handling">5. Data handling</h2>
+
+          <p>
+            Blocker Radar reads Jira issue and issue-link information only as
+            required to identify and display active blocker relationships.
+          </p>
+
+          <p>
+            The current version does not persist Jira issue content or blocker
+            relationships in an external database and does not send this data to
+            external analytics or advertising services.
+          </p>
+
+          <h2 id="permissions">6. Jira permissions</h2>
+
+          <p>
+            Blocker Radar uses read-only Jira access for its current
+            functionality.
+          </p>
+
+          <p>
+            The App does not require permission to modify Jira issues in order
+            to provide the Blocker Radar view.
+          </p>
+
+          <h2 id="vulnerabilities">7. Security vulnerabilities</h2>
+
+          <p>
+            If you believe you have identified a security vulnerability in
+            Blocker Radar, please report it privately and do not disclose the
+            issue publicly before it has been investigated.
+          </p>
+
+          <p>Security reports should include, where possible:</p>
+
+          <ul>
+            <li>a description of the issue</li>
+            <li>steps to reproduce the issue</li>
+            <li>the potential impact</li>
+            <li>relevant screenshots or error messages</li>
+          </ul>
+
+          <div class="note">
+            <p>
+              Do not include passwords, authentication tokens or unnecessary
+              confidential customer data in security reports.
+            </p>
+          </div>
+
+          <p>
+            Security issues can be reported privately at
+            <a href="mailto:security@guardianapps.ch">
+              security@guardianapps.ch
+            </a>.
+          </p>
+
+          <h2 id="response">8. Security response</h2>
+
+          <p>
+            Guardian Apps will review reported security issues and prioritize
+            remediation based on severity, exploitability and customer impact.
+          </p>
+
+          <p>
+            Where appropriate, fixes will be deployed through the Atlassian Forge
+            deployment process.
+          </p>
+
+          <h2 id="dependencies">9. Dependency management</h2>
+
+          <p>
+            Blocker Radar dependencies are periodically reviewed. Known dependency
+            vulnerabilities are assessed according to their severity and relevance
+            to the App.
+          </p>
+
+          <h2 id="changes">10. Changes to this policy</h2>
+
+          <p>
+            This Security Policy may be updated as the App evolves or security
+            requirements change. The current version will remain available at
+            this URL.
+          </p>
+
+          <h2 id="contact">11. Contact</h2>
+
+          <p>
+            Security issues can be reported directly to
+            <a href="mailto:security@guardianapps.ch">
+              security@guardianapps.ch
+            </a>.
+          </p>
+
+          <p>
+            For non-security questions, please use the
+            <a href="./support.html">Blocker Radar Support page</a>.
+          </p>
+
+        </article>
+
+        <aside class="sidebar">
+          <p class="sidebar-title">Security Policy</p>
+
+          <div class="sidebar-links">
+            <a href="#overview">Overview</a>
+            <a href="#hosting">Hosting</a>
+            <a href="#authentication">Authentication</a>
+            <a href="#credentials">Secrets & credentials</a>
+            <a href="#data-handling">Data handling</a>
+            <a href="#permissions">Permissions</a>
+            <a href="#vulnerabilities">Vulnerability reporting</a>
+            <a href="#response">Security response</a>
+            <a href="#dependencies">Dependencies</a>
+            <a href="#changes">Changes</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="contact-card">
+
+          <div>
+            <h2>Report a security issue</h2>
+
+            <p>
+              Please report potential vulnerabilities privately so we can
+              investigate them responsibly.
+            </p>
+          </div>
+
+          <a class="button" href="mailto:security@guardianapps.ch">
+            security@guardianapps.ch
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>&copy; 2026 Guardian Apps</div>
+
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./security.html">Security</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

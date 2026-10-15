@@ -263,6 +263,10 @@ a {
   box-shadow: var(--shadow);
 }
 
+.product-card + .product-card {
+  margin-top: 32px;
+}
+
 .product-logo-wrap {
   display: flex;
   justify-content: center;

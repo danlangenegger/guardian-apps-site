@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Documentation for Blocker Radar for Jira, including installation, blocker detection, filtering, prioritization and troubleshooting."
+  />
+
+  <title>Documentation | Blocker Radar for Jira</title>
+
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a class="brand" href="../index.html">
+        <img
+          class="brand-logo"
+          src="../assets/guardian-apps-logo.png"
+          alt="Guardian Apps logo"
+        />
+        <span>Guardian Apps</span>
+      </a>
+
+      <nav class="site-nav">
+        <a href="../index.html#apps">Apps</a>
+        <a class="active" href="./docs.html">Documentation</a>
+        <a href="./support.html">Support</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+
+        <img
+          class="page-hero-logo"
+          src="../assets/blocker-radar-logo.png"
+          alt="Blocker Radar for Jira logo"
+        />
+
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Blocker Radar for Jira
+          </div>
+
+          <h1>Documentation</h1>
+
+          <p>
+            Installation, blocker detection, filtering, prioritization and
+            troubleshooting for Blocker Radar.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-layout">
+
+        <article class="content-card">
+
+          <p><strong>Last updated:</strong> October 2026</p>
+
+          <p>
+            Blocker Radar for Jira gives teams a focused, cross-project view
+            of active delivery blockers in Jira Cloud.
+          </p>
+
+          <h2 id="overview">1. Overview</h2>
+
+          <p>
+            Blocker Radar identifies Jira issues that use an
+            <strong>"is blocked by"</strong> issue-link relationship and brings
+            active blocker relationships together in one view.
+          </p>
+
+          <p>The App currently provides:</p>
+
+          <ul>
+            <li>A cross-project view of active blockers</li>
+            <li>Priority-based ordering</li>
+            <li>Project filtering</li>
+            <li>Status filtering</li>
+            <li>Summary metrics for active blocker relationships</li>
+            <li>Direct links to blocked and blocking Jira issues</li>
+          </ul>
+
+          <h2 id="installation">2. Installation</h2>
+
+          <p>
+            Blocker Radar is installed from the Atlassian Marketplace into
+            a Jira Cloud site.
+          </p>
+
+          <p>To install the App:</p>
+
+          <ol>
+            <li>Open the Blocker Radar Marketplace listing.</li>
+            <li>Select the option to install or start a trial.</li>
+            <li>Select the Jira Cloud site where the App should be installed.</li>
+            <li>Approve the requested Jira permissions.</li>
+            <li>Open Blocker Radar from Jira after installation completes.</li>
+          </ol>
+
+          <div class="note">
+            <p>
+              Blocker Radar is a Jira Cloud app built on Atlassian Forge.
+            </p>
+          </div>
+
+          <h2 id="active-blocker">3. What counts as an active blocker?</h2>
+
+          <p>
+            Blocker Radar uses Jira issue links to identify blocking
+            relationships.
+          </p>
+
+          <p>
+            An issue is considered actively blocked when:
+          </p>
+
+          <ul>
+            <li>
+              the issue contains an <strong>"is blocked by"</strong>
+              relationship to another Jira issue
+            </li>
+            <li>
+              the blocked issue is not in Jira's Done status category
+            </li>
+            <li>
+              the blocking issue is not in Jira's Done status category
+            </li>
+          </ul>
+
+          <p>
+            Relationships involving completed blocked issues or completed
+            blockers are excluded from the active blocker view.
+          </p>
+
+          <h2 id="dashboard">4. Blocker overview</h2>
+
+          <p>
+            The top of Blocker Radar provides summary information about the
+            currently displayed blocker relationships.
+          </p>
+
+          <p>The current summary includes:</p>
+
+          <ul>
+            <li>Active blocker relationships</li>
+            <li>Highest-priority relationships</li>
+            <li>High-priority relationships</li>
+            <li>Number of affected Jira projects</li>
+          </ul>
+
+          <p>
+            Summary values automatically update when filters are applied.
+          </p>
+
+          <h2 id="priority">5. Priority ordering</h2>
+
+          <p>
+            Blocker Radar orders blocker relationships according to the
+            priority of the blocked Jira issue.
+          </p>
+
+          <p>The default priority order is:</p>
+
+          <ol>
+            <li>Highest</li>
+            <li>High</li>
+            <li>Medium</li>
+            <li>Low</li>
+            <li>Lowest</li>
+          </ol>
+
+          <p>
+            Other or custom priority values may appear after the standard
+            priorities.
+          </p>
+
+          <h2 id="filters">6. Filtering blockers</h2>
+
+          <p>
+            Blocker Radar provides filters to help narrow the active blocker
+            list.
+          </p>
+
+          <h3>Project filter</h3>
+
+          <p>
+            Select a Jira project to display blocker relationships associated
+            with that project.
+          </p>
+
+          <h3>Status filter</h3>
+
+          <p>
+            Select a Jira issue status to display only blocked issues currently
+            in that status.
+          </p>
+
+          <p>
+            Filters can be cleared to return to the complete active blocker
+            view.
+          </p>
+
+          <h2 id="relationships">7. Understanding a blocker relationship</h2>
+
+          <p>
+            Each Blocker Radar entry displays information about the blocked
+            Jira issue and the issue preventing it from progressing.
+          </p>
+
+          <p>The blocked issue section includes:</p>
+
+          <ul>
+            <li>Issue key</li>
+            <li>Summary</li>
+            <li>Status</li>
+            <li>Priority</li>
+            <li>Project</li>
+            <li>Assignee</li>
+          </ul>
+
+          <p>The <strong>Blocked by</strong> section includes:</p>
+
+          <ul>
+            <li>Blocking issue key</li>
+            <li>Blocking issue summary</li>
+            <li>Blocking issue status</li>
+          </ul>
+
+          <h2 id="jira-links">8. Opening Jira issues</h2>
+
+          <p>
+            Jira issue keys displayed in Blocker Radar are clickable.
+          </p>
+
+          <p>
+            You can open both the blocked issue and the blocking issue directly
+            in Jira for investigation and follow-up.
+          </p>
+
+          <h2 id="permissions">9. Permissions</h2>
+
+          <p>
+            Blocker Radar uses read-only Jira access to retrieve issue
+            information and issue-link relationships.
+          </p>
+
+          <p>
+            The current version does not require Jira write permissions and
+            does not modify Jira issues.
+          </p>
+
+          <h2 id="data-hosting">10. Data and hosting</h2>
+
+          <p>
+            Blocker Radar is built on Atlassian Forge and runs on
+            Atlassian-hosted infrastructure.
+          </p>
+
+          <p>
+            The current version does not require an external application server
+            or external database for its core functionality.
+          </p>
+
+          <p>
+            Jira issue information is retrieved when Blocker Radar is used.
+            The current version does not maintain its own persistent database
+            of Jira issues or blocker relationships.
+          </p>
+
+          <h2 id="troubleshooting">11. Troubleshooting</h2>
+
+          <h3>No blockers are displayed</h3>
+
+          <p>
+            Confirm that your Jira issues use the
+            <strong>"is blocked by"</strong> issue-link relationship and that
+            both the blocked issue and blocker are still active.
+          </p>
+
+          <h3>An expected blocker is missing</h3>
+
+          <p>
+            Check whether either issue has moved into Jira's Done status
+            category. Completed relationships are intentionally excluded from
+            the active blocker view.
+          </p>
+
+          <p>
+            Also confirm that the Jira issue link uses the expected blocking
+            relationship.
+          </p>
+
+          <h3>A blocker relationship looks incorrect</h3>
+
+          <p>
+            Open the affected Jira issues and verify the configured issue-link
+            relationship and current Jira statuses.
+          </p>
+
+          <h3>Filters return no results</h3>
+
+          <p>
+            Clear the Project and Status filters to return to the full active
+            blocker list.
+          </p>
+
+          <h2 id="support">12. Support</h2>
+
+          <p>
+            If you need help with installation, blocker detection or unexpected
+            results, visit the
+            <a href="./support.html">Blocker Radar Support page</a>.
+          </p>
+
+        </article>
+
+        <aside class="sidebar">
+
+          <p class="sidebar-title">Documentation</p>
+
+          <div class="sidebar-links">
+            <a href="#overview">Overview</a>
+            <a href="#installation">Installation</a>
+            <a href="#active-blocker">Active blockers</a>
+            <a href="#dashboard">Overview metrics</a>
+            <a href="#priority">Priority ordering</a>
+            <a href="#filters">Filters</a>
+            <a href="#relationships">Blocker relationships</a>
+            <a href="#jira-links">Opening Jira issues</a>
+            <a href="#permissions">Permissions</a>
+            <a href="#data-hosting">Data & hosting</a>
+            <a href="#troubleshooting">Troubleshooting</a>
+            <a href="#support">Support</a>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>&copy; 2026 Guardian Apps</div>
+
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./security.html">Security</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
